@@ -1,10 +1,12 @@
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner/Banner.jsx';
+import Form from './components/form/Form.jsx';
 
 
 function App() {
   return (
     <div className="App">
       <Banner/>
+      <Form/>
     </div>
   );
 }
