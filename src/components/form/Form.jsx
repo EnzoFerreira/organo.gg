@@ -12,15 +12,7 @@ const Form = (props) => {
   const[cargo, setCargo] = useState('')
   const[imagem, setImagem] = useState('')
   const[time, setTime] = useState('')
-  
-  const times = [
-      'programação',
-      'front end',
-      'data science',
-      'dev ops',
-      'mobile'
-  ]
-  
+    
   const aoSalvar = (evento) =>{
       evento.preventDefault()
       props.aoColaboradorCadastrado({
@@ -60,7 +52,7 @@ const Form = (props) => {
             <ListaSus 
             obrigatorio={true} 
             label="Times"
-            itens={times} 
+            itens={props.times} 
             valor = {time}
             aoAlterado = {valor => setTime(valor)}
             />
